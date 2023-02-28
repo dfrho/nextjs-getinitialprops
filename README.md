@@ -1,5 +1,5 @@
-# getInitialProps Example Next.js Component
-This is the companion code base for this blog post, [Understanding ISR in Next.js](https://www.espressocode.tech/blog/isg-nextjs). We are using `getInitialProps` to get data before the page is rendered (SSR) to populate the component's props.
+# getStaticProps Example Next.js Component
+This is the companion code base for this blog post, [Understanding ISR in Next.js](https://www.espressocode.tech/blog/isg-nextjs). We are using `getStaticProps` to get data before the page is rendered (SSR) to populate the component's props.
 
 [Deployed on Netlify](https://eclectic-zabaione-3ea2da.netlify.app/)
 
