@@ -19,6 +19,25 @@ export async function getServerSideProps(context) {
   }
 }
 
+export async function getStaticProps() {
+  // Fetch data from an API or database
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const data = await res.json();
+
+  // Pass data as props to the page component
+  return {
+    props: { data },
+    revalidate: 60, // Revalidate every 60 seconds
+  };
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: true,
+  };
+}
+
 export default function Home({ data }) {
   return (
     <div className={styles.container}>
