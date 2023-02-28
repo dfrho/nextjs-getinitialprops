@@ -2,23 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
-// export async function getServerSideProps(context) {
-//   if (context.req) {
-//     // Fetch data from the JSONPlaceholder API
-//     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-//     const data = await res.json();
-
-//     // Pass data as props to the page component
-//     return {
-//       props: { data },
-//     };
-//   } else {
-//     // If the page is being requested client-side,
-//     // use Client-side Rendering mode.
-//     return { props: {} };
-//   }
-// }
-
 export async function getStaticProps() {
   // Fetch data from an API or database
   const res = await fetch('https://jsonplaceholder.typicode.com/posts');
