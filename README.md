@@ -1,4 +1,4 @@
-# getInitalProps Example Next.js Component
+# getInitialProps Example Next.js Component
 This is the companion code base for this blog post, [Understanding ISR in Next.js](https://www.espressocode.tech/blog/isg-nextjs)
 
 [Deployed on Netlify:](https://eclectic-zabaione-3ea2da.netlify.app/)
