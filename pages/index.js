@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
-export async function getInitialProps(context) {
+export async function getServerSideProps(context) {
   if (context.req) {
     // Fetch data from the JSONPlaceholder API
     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
