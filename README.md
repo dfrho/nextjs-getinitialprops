@@ -1,7 +1,7 @@
 # getStaticProps Example Next.js Component
 This is the companion code base for this blog post, [Understanding ISR in Next.js](https://www.espressocode.tech/blog/isg-nextjs). We are using `getStaticProps` to get data before the page is rendered (SSR) to populate the component's props.
 
-With ISR, the pre-generated HTML is cached on the server and served to subsequent requests. When the cache expires, Next.js re-generates the page in the background and updates the cache. This allows for faster response times and a more dynamic user experience without sacrificing the benefits of server-side rendering.
+Using ISR, the pre-generated HTML is cached on the server and served to subsequent requests. When the cache expires, Next.js re-generates the page in the background and updates the cache. This allows for faster response times and a more dynamic user experience without sacrificing the benefits of server-side rendering.
 
 So, while ISR is a form of static site generation, it still uses server-side rendering to generate the initial HTML and therefore can be considered a form of SSR.
 
